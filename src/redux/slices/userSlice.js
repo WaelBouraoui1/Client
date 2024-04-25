@@ -3,7 +3,7 @@ import axios from 'axios'
 
 export const UserLogin=createAsyncThunk('/login',async(data,{rejectWithValue})=>{
     try {
-        const res=await axios.post("http://localhost:8081/api/login",data)
+        const res=await axios.post("https://backend-taskmangement.onrender.com/api/login",data)
         return res.data
     } catch (error) {
         return rejectWithValue(error.response.data.msg)
@@ -11,7 +11,7 @@ export const UserLogin=createAsyncThunk('/login',async(data,{rejectWithValue})=>
 })
 export const UserRegister=createAsyncThunk('/register',async(data,{rejectWithValue})=>{
     try {
-        const res=await axios.post("http://localhost:8081/api/post",data)
+        const res=await axios.post("https://backend-taskmangement.onrender.com/api/post",data)
         return res.data
     } catch (error) {
         console.log(error)
