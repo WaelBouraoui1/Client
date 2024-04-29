@@ -11,7 +11,7 @@ const UserList = () => {
         dispatch(GetTasks())
     },[])
   return (
-    <div>
+    <div className='container'>
       {taskData.map(task=><Task mytask={task}/>)}
     </div>
   )

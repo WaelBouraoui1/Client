@@ -19,7 +19,7 @@ const Register = () => {
         }))
         ///console.log(e.current.value,p.current.value)
       }}>Register</button>
-      {loading && <h3>Loading....</h3>}
+      {loading && <h3 class="loader"></h3>}
       {error && <h3>{error}</h3>}
 
     </div>

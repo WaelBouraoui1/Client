@@ -36,6 +36,7 @@ export const UserRegister=createAsyncThunk('/register',async(data,{rejectWithVal
             localStorage.removeItem("isAuth")
             localStorage.removeItem("token")
         }
+        
     },
 
     extraReducers:(builder)=>{

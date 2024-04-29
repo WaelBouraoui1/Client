@@ -8,7 +8,7 @@ const Task = ({mytask}) => {
     <div>
       <h3>{mytask.title}</h3>
       <h3>{mytask.desc}</h3>
-      <button onClick={()=>{
+      <button className='Delet Task' onClick={()=>{
         dispatch(DeleteTask(mytask._id))
       }}>Delet Task</button>
     </div>

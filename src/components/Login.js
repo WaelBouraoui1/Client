@@ -15,14 +15,15 @@ const Login = () => {
       <button onClick={()=>{dispatch(UserLogin({
         email:email.current.value,
         password:Password.current.value
-    }))}}>Login</button>
-    {loading && <h3>loading . . . . . </h3>}
-    {error && <h3>{error}</h3>}
+    }))}}  >Login</button>
+    {loading && <h3 class="loader"> </h3>}
+    {error && <h3>{error}</h3>
+    }
     </div>
   )
+  
 }
 
 export default Login
 
-///06.00 Nouvel onglet - Awesome Screenshot 16/04 (2)
 
